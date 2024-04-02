@@ -120,3 +120,6 @@ header {
 .download:hover .button_lg::after {
   background-color: black;
 }
+.startIcon {
+  display: flex !important;
+}

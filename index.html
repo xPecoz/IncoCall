@@ -102,6 +102,11 @@
                   id="counter"
                 ></div>
                 <div
+                  class="bg-main flex items-center justify-center h-[64px] w-[64px] rounded-full cursor-pointer muteBtn"
+                >
+                  <i class="fa-solid fa-volume-high text-2xl muteIcon"></i>
+                </div>
+                <div
                   class="bg-main flex items-center justify-center h-[64px] w-[64px] rounded-full cursor-pointer startBtn"
                 >
                   <i class="fa-solid fa-microphone text-2xl startIcon"></i>
@@ -139,6 +144,13 @@
           class="container flex justify-center items-center gap-5 pb-5 text-white"
         >
           <button
+            class="h-[100px] w-[100px] rounded-full bg-btn flex items-center justify-center cursor-pointer duration-200 active:scale-95 box-shadow muteBtn"
+          >
+            <i
+              class="fa-solid fa-volume-high text-white text-[35px] muteIcon"
+            ></i>
+          </button>
+          <button
             class="h-[200px] w-[200px] rounded-full bg-btn flex items-center justify-center cursor-pointer duration-200 active:scale-95 box-shadow startBtn"
           >
             <i
@@ -147,7 +159,6 @@
           </button>
         </div>
       </section>
-      <section></section>
     </main>
 
     <script

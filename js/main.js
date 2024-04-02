@@ -20,11 +20,21 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 
+// Icons
 let startBtns = document.querySelectorAll(".startBtn");
 let startIcons = document.querySelectorAll(".startIcon");
 
 for (let i = 0; i < startBtns.length; i++) {
   startBtns[i].addEventListener("click", () =>
     startIcons.forEach((e) => e.classList.toggle("fa-stop"))
+  );
+}
+
+let muteBtns = document.querySelectorAll(".muteBtn");
+let muteIcons = document.querySelectorAll(".muteIcon");
+
+for (let i = 0; i < startBtns.length; i++) {
+  muteBtns[i].addEventListener("click", () =>
+    muteIcons.forEach((e) => e.classList.toggle("fa-volume-xmark"))
   );
 }
