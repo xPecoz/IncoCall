@@ -1,0 +1,122 @@
+:root {
+  --main-color: #8068fc;
+  --btn-color: #211f4e;
+  --sidebar-width: 150px;
+  --add-width: 75px;
+}
+.container {
+  padding-left: calc(var(--sidebar-width) + var(--add-width));
+  max-width: 100% !important;
+  padding-right: var(--add-width);
+}
+.box-shadow {
+  filter: drop-shadow(0 2px 10px #00000087);
+}
+header {
+  backdrop-filter: blur(5px);
+  background: rgba(64, 48, 108, 0.11);
+  .container {
+    padding-left: var(--sidebar-width);
+    padding-right: 0;
+
+    .main-links a {
+      color: white;
+      --s: 0.1em;
+      color: rgba(0, 0, 0, 0);
+      padding-bottom: var(--s);
+      background: linear-gradient(90deg, var(--main-color) 50%, white 0)
+          calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--main-color) 0 0) 0% 100% / var(--_p, 0%) var(--s)
+          no-repeat;
+      -webkit-background-clip: text, padding-box;
+      background-clip: text, padding-box;
+      transition: 0.5s;
+      &:hover,
+      &.active {
+        --_p: 100%;
+      }
+    }
+  }
+}
+.text-shadow {
+  text-shadow: 0 0 3px #6c51dc, 0 0 5px var(--main-color);
+}
+.download {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 25px;
+  transition: all 0.15s ease;
+  width: fit-content;
+  outline: none !important;
+}
+.download::before,
+.download::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1.5px solid #7d8082;
+  transition: all 0.15s ease;
+}
+.download::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+.download::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+.download:active::before,
+.download:active::after {
+  right: 3px;
+  left: 3px;
+}
+.download:active::before {
+  top: 3px;
+}
+.download:active::after {
+  bottom: 3px;
+}
+.download .button_lg {
+  padding: 8px 20px;
+  background-color: var(--btn-color);
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+.download .button_lg::before,
+.download .button_lg::after {
+  content: "";
+  position: absolute;
+  background-color: var(--btn-color);
+}
+.download .button_lg::before {
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+}
+.download .button_lg::after {
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+}
+.download .button_sl {
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #2a2544;
+  transform: skew(-15deg);
+  transition: all 0.2s ease;
+}
+.download:hover {
+  color: #2a2544;
+}
+.download:hover .button_sl {
+  width: calc(100% + 15px);
+}
+.download:hover .button_lg::after {
+  background-color: black;
+}

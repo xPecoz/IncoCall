@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IncoCall</title>
+    <link rel="shortcut icon" href="imgs/Logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwindcss.js"></script>
+  </head>
+  <body class="font-body box-border bg-body">
+    <header class="rounded-b-[14px] w-[100vw] fixed z-10">
+      <div class="container py-4 pr-4">
+        <div
+          class="main-links text-[26px] font-semibold flex items-center justify-center gap-16"
+        >
+          <a href="index.html" class="active font-bold">Home</a>
+          <a href="about.html" class="font-bold">About</a>
+          <a href="developers.html" class="font-bold">Developers</a>
+          <a href="services.html" class="font-bold">Services</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <aside class="fixed z-20 h-screen pl-5 py-5 w-[150px]">
+        <div
+          class="asideContainer bg-[#21204a] text-white h-full rounded-3xl flex flex-col justify-between py-7 px-2"
+        >
+          <img src="imgs/Logo.png" class="w-[75px] mx-auto box-shadow" />
+          <ul class="text-[25px] flex flex-col items-center gap-7">
+            <li>
+              <a href="#" class="text-orange">
+                <i class="fa-solid fa-house"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-house"></i></a>
+            </li>
+          </ul>
+          <div class="space-y-4">
+            <div
+              class="bg-main rounded-full mx-auto w-[50px] h-[50px] flex items-center justify-center text-[18px] cursor-pointer"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </div>
+            <div
+              class="bg-main rounded-full mx-auto w-[50px] h-[50px] flex items-center justify-center text-[18px] cursor-pointer"
+            >
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <section>
+        <div
+          class="container m-auto flex flex-col items-center justify-between gap-5 h-screen pt-[90px]"
+        >
+          <div
+            class="bg-box w-full rounded-3xl flex flex-col py-3 items-center justify-center gap-3"
+          >
+            <div class="w-[350px]">
+              <img
+                src="imgs/logo.png"
+                class="w-full rounded-3xl p-2 box-shadow"
+              />
+            </div>
+            <h1
+              class="text-white text-5xl font-bold bg-[#21204a] py-2.5 px-10 rounded-3xl"
+            >
+              IncoCall
+            </h1>
+          </div>
+          <div class="info flex justify-center items-center flex-col gap-4">
+            <div class="w-full flex items-center gap-2">
+              <div
+                class="text-[40px] text-white flex items-center justify-center gap-3"
+              >
+                <div
+                  class="block border-[2px] border-main text-white font-bold flex gap-2 h-fit text-[40px] rounded-xl"
+                  id="counter"
+                ></div>
+                <div
+                  class="bg-main flex items-center justify-center h-[64px] w-[64px] rounded-full cursor-pointer startBtn"
+                >
+                  <i class="fa-solid fa-microphone text-2xl startIcon"></i>
+                </div>
+                Users Are Online Now
+              </div>
+            </div>
+            <p
+              class="text-[40px] text-white flex items-center justify-center gap-2"
+            >
+              There Is About<span class="text-orange font-bold">100.000</span
+              >Downloads
+            </p>
+            <p
+              class="text-[40px] text-white flex items-center justify-center gap-2"
+            >
+              There Is About<span class="text-orange font-bold">200.000</span
+              >Accounts
+            </p>
+          </div>
+          <div>
+            <button
+              class="download block relative font-bold text-uppercase border-0 m-auto bg-transparent p-2 mb-10"
+            >
+              <span class="button_lg block relative text-white overflow-hidden">
+                <span class="button_sl block absolute top-0 w-0"></span>
+                <span class="button_text block relative">Download App</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="h-[65vh] flex items-center justify-center">
+        <div
+          class="container flex justify-center items-center gap-5 pb-5 text-white"
+        >
+          <button
+            class="h-[200px] w-[200px] rounded-full bg-btn flex items-center justify-center cursor-pointer duration-200 active:scale-95 box-shadow startBtn"
+          >
+            <i
+              class="fa-solid fa-microphone text-white text-[50px] startIcon"
+            ></i>
+          </button>
+        </div>
+      </section>
+      <section></section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/102e410967.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
